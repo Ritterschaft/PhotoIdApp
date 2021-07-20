@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".activity.HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_bottom_mune_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/panding_10"
+                android:paddingBottom="@dimen/panding_5"
+                android:background="@drawable/btn_touch_selector"
+                android:drawableTop="@drawable/btn_tab_home_selector"
+                android:textSize="@dimen/textsize_10"
+                android:letterSpacing="0.02"
+                android:drawablePadding="-3dp"
+                android:gravity="center"
+                android:text="@string/tab_home"
+                android:layout_centerInParent="true"
+                android:scaleType="matrix"
+                android:textColor="@color/tab_selected"/>
+
+            <Button
+                android:id="@+id/btnMy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/panding_10"
+                android:paddingBottom="@dimen/panding_5"
+                android:background="@drawable/btn_touch_selector"
+                android:drawableTop="@drawable/btn_tab_my_selector"
+                android:textSize="@dimen/textsize_10"
+                android:drawablePadding="-3dp"
+                android:letterSpacing="0.02"
+                android:gravity="center"
+                android:text="@string/tab_my"
+                android:layout_centerInParent="true"
+                android:scaleType="matrix"
+                android:textColor="@color/tab_unselect"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llBottom"/>
+</RelativeLayout>

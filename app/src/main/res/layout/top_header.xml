@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/top_bg"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/viewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:id="@+id/rlTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/ibtnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_back"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/panding_11"
+                android:paddingRight="@dimen/panding_11"
+                android:paddingTop="@dimen/panding_5"
+                android:paddingBottom="@dimen/panding_5"
+                android:layout_marginLeft="@dimen/panding_5"
+                android:background="@drawable/btn_touch_selector"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_19"
+                android:letterSpacing="0.05"
+                android:layout_marginLeft="@dimen/panding_17"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ibtnBack"
+                android:paddingBottom="@dimen/panding_2"
+                android:text="@string/app_name"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

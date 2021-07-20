@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_1c"
+    tools:context=".activity.DetectionScanActivity">
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/panding_20"
+            android:layout_marginTop="@dimen/panding_15"
+            android:layout_marginRight="@dimen/panding_20"
+            android:layout_marginBottom="@dimen/panding_16"
+            android:text="正在智能处理您的照片"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/panding_20"
+            android:layout_marginRight="@dimen/panding_20"
+            android:lineSpacingExtra="@dimen/panding_1"
+            android:text="我们将使用人体识别技术扫描您的照片，并按照你选择的尺寸调整至最佳状态，处理照片可能需要一些时间，请耐心等待。"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/panding_20"
+            android:layout_marginTop="@dimen/panding_40"
+            android:layout_marginRight="@dimen/panding_20"
+            android:layout_marginBottom="@dimen/panding_45">
+
+            <ImageButton
+                android:id="@+id/ibtnClose"
+                android:layout_width="@dimen/panding_48"
+                android:layout_height="@dimen/panding_48"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/scan_close_bg"
+                android:src="@mipmap/icon_close_white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panding_48"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/panding_15"
+                android:layout_toRightOf="@id/ibtnClose">
+
+                <com.ruoqian.brainidphoto.view.CameraProgressView
+                    android:id="@+id/cameraProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panding_48"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="处理中..."
+                    android:letterSpacing="0.02"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_17" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llBottom">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/panding_20">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/businessman"
+                android:alpha="0.8"
+                android:scaleType="centerCrop"
+                android:background="@drawable/camera_pic_border_bg"
+                android:padding="0.5dp"/>
+
+            <ImageView
+                android:id="@+id/ivCameraScan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/camera_scan_line"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="-75dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

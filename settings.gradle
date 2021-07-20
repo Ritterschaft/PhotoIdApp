@@ -1,0 +1,6 @@
+include ':picture_library'
+include ':XPupopUI'
+include ':ruoqianlib'
+include ':cameraview'
+include ':app'
+rootProject.name = "brainIdphoto"

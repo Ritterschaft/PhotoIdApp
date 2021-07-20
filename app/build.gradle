@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.application'
+    id 'org.greenrobot.greendao'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
+
+    signingConfigs {
+        config {
+            keyAlias '39rp'
+            keyPassword '39rp.com'
+            storeFile file('F:/keystore/39rp.jks')
+            storePassword '39rp.com'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.ruoqian.brainidphoto"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.config
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    greendao {
+        //指定数据库schema版本号，迁移等操作会用到;
+        schemaVersion 1
+        //dao的包名，包名默认是entity所在的包；
+        daoPackage 'com.ruoqian.brainidphoto.dao'
+        //生成数据库文件的目录;
+        targetGenDir 'src/main/java'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'org.greenrobot:greendao:3.3.0'
+    implementation 'io.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1'
+    implementation 'io.github.youth5201314:banner:2.2.2'
+    implementation project(path: ':cameraview')
+    implementation project(path: ':ruoqianlib')
+    implementation project(path: ':picture_library')
+}

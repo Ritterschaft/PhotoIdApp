@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#f8f8f8</color>
+    <color name="appBackground">#f5f5f5</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorbar">#fafafa</color>
+    <color name="color282828">#282828</color>
+    <color name="color363636">#363636</color>
+    <color name="color_404040">#404040</color>
+    <color name="color444">#444444</color>
+    <color name="color555">#555555</color>
+    <color name="color666">#666666</color>
+    <color name="color777">#777777</color>
+    <color name="color888">#888888</color>
+    <color name="color999">#999999</color>
+    <color name="colorAAA">#aaaaaa</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_transparent_06">#06000000</color>
+    <color name="color_transparent_05">#05000000</color>
+    <color name="color_transparent_03">#03000000</color>
+</resources>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">智能美拍证件照</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_my">我的</string>
+    <string name="idphoto_see">立即查看</string>
+    <string name="search_idphoto_hint">请输入证件照名称</string>
+    <string name="home_crop">照片裁剪</string>
+    <string name="home_matting">照片抠图</string>
+    <string name="home_refoot">照片换底</string>
+    <string name="home_recommend">热门规格</string>
+    <string name="home_more">更多</string>
+    <string name="title_my">我的</string>
+    <string name="my_account">账号管理</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_customer">客服中心</string>
+    <string name="my_feedback">意见反馈</string>
+    <string name="my_setting">设置</string>
+    <string name="idphoto_specs">证件照规格</string>
+    <string name="idphoto_search">搜索</string>
+    <string name="idphoto_search_history">搜索历史</string>
+    <string name="idphoto_search_empty">未找到相应规格</string>
+    <string name="idphoto_specs_details">规格详情</string>
+    <string name="idphoto_specs_details_mm">冲印尺寸</string>
+    <string name="idphoto_specs_details_px">像素大小</string>
+    <string name="idphoto_specs_details_dpi">分辨率</string>
+    <string name="idphoto_other">照片需看见两耳轮廓和脖颈部位处</string>
+    <string name="idphoto_carema">拍照攻略</string>
+    <string name="idphoto_album_select">选择相册</string>
+    <string name="idphoto_album_camera">拍照</string>
+</resources>

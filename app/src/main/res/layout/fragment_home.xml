@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lvIdphotos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:divider="@null"
+        android:listSelector="@null"/>
+
+    <RelativeLayout
+        android:id="@+id/rlTopSearchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/home_bottom_search_bg"
+            android:layout_alignParentTop="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/viewTopStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:id="@+id/rlTopSearch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panding_40"
+                android:background="@drawable/search_bg"
+                android:layout_marginTop="@dimen/panding_8"
+                android:layout_marginLeft="@dimen/panding_16"
+                android:layout_marginRight="@dimen/panding_16">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color999"
+                    android:textSize="@dimen/textsize_12"
+                    android:letterSpacing="0.03"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@mipmap/icon_search"
+                    android:layout_marginLeft="@dimen/panding_15"
+                    android:layout_marginRight="@dimen/panding_15"
+                    android:text="@string/search_idphoto_hint"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/panding_11"
+                    android:background="@color/color999"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/panding_42"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
